@@ -1,18 +1,18 @@
 directories = {
-    "/opt/dehydrated": {
-        "mode": "0755",
+    '/opt/dehydrated': {
+        'mode': '0755',
     },
-    "/etc/letsencrypt": {
-        "mode": "0755",
+    '/etc/letsencrypt': {
+        'mode': '0755',
     },
 }
 
 git_deploy = {
-    "/opt/dehydrated": {
+    '/opt/dehydrated': {
         'needs': [
-            "directory:/opt/dehydrated"
+            'directory:/opt/dehydrated'
         ],
-        'repo': "https://github.com/lukas2511/dehydrated.git",
-        'rev': "master",
+        'repo': 'https://github.com/lukas2511/dehydrated.git',
+        'rev': 'master',
     },
 }
