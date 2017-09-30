@@ -9,9 +9,7 @@ directories = {
 
 git_deploy = {
     '/opt/dehydrated': {
-        'needs': [
-            'directory:/opt/dehydrated'
-        ],
+        'needs': ['directory:/opt/dehydrated'],
         'repo': 'https://github.com/lukas2511/dehydrated.git',
         'rev': 'master',
     },
